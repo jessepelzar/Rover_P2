@@ -1,5 +1,5 @@
 
-ns for the QTR sensor Array ver. 1.1
+/*ns for the QTR sensor Array ver. 1.1
  * Created by D. Summerville, 2014
  * Edited by I.Sekyonda 2016
  * Edit for Atmega32u4 on PapilioDUO
