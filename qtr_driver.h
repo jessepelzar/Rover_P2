@@ -22,7 +22,7 @@
 
 //Define the charge and discharge times
 #define QTR_CHARGE_TIME 1   //charge time in whole units of 1/8 ms
-#define QTR_DISCHARGE_TIME 40 //discharge time in whole units of 1/8 ms
+#define QTR_DISCHARGE_TIME 61 //discharge time in whole units of 1/8 ms
 
 //Driver public interface
 void init_QTR_driver();
