@@ -1,4 +1,4 @@
-//program to demonstrate use of QTR driver
+
 #define F_CPU 8000000UL
 #include "motor.h"
 #include <avr/io.h>
@@ -12,11 +12,11 @@ int main()
 	unsigned char QTR_Val;
 	//Forever output QTR value on PORTB
 	while(1){
-		QTR_Val=get_QTR_value();
-		if(QTR_Val == 0x3C){
-			leftmotorport = 0x01;
+		QTR_Val=get_QTR_value() & 0x0C;
+		if(QTR_Val == 0x0C){
+			leftmotor_forward;
 			_delay_ms(2);
-			rightmotorport = 0x01;
+			rightmotor_forward;
 			_delay_ms(2);
 		}
 		
