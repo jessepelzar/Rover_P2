@@ -23,20 +23,22 @@ as we only have to change the letter in the H file and it is changed everywhere 
 /*Defining the Port Letters and locations for the Leftmortor. Change 
 Change these to match your locations*/
 #define leftmotorport D
-#define leftmotora 3
-#define leftmotorb 2
+#define leftmotora 2
+#define leftmotorb 3
+
 #define leftquadport B
-#define leftquada 4
-#define leftquadb 5
+#define leftquada 5
+#define leftquadb 4
 
 /*Defining the Port Letters and locations for the Rightmortor
 Change these to match your locations*/
 #define rightmotorport D
 #define rightmotora 7
 #define rightmotorb 6
+
 #define rightquadport D
-#define rightquada 1
-#define rightquadb 4
+#define rightquada 4
+#define rightquadb 1
 
 
 void init_motors ();
