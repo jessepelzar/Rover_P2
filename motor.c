@@ -52,14 +52,14 @@ void rightmotor_brake(){
 }
 
 
-void leftmotor_foward(){
+void leftmotor_forward(){
     
     port(PORT,leftmotorport) |= (1<<leftmotorb);
     port(PORT,leftmotorport) &= ~(1<<leftmotora);
     
 }
 
-void rightmotor_foward(){
+void rightmotor_forward(){
     
     port(PORT,rightmotorport) &=  ~(1<<rightmotorb);
     port(PORT,rightmotorport) |=  (1<<rightmotora);

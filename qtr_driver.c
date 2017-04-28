@@ -43,7 +43,7 @@ ISR(TIMER0_COMPB_vect)
 ISR(TIMER0_COMPA_vect)
 {
     QTR_ARRAY_VALUE=PIN_QTR; //read current sensor value
-    QTR_CHARGE_ARRAY(); //begin chrging array for next read
+    QTR_CHARGE_ARRAY(); //begin charging array for next read
     return;
 }
 

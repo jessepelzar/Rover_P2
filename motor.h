@@ -20,7 +20,7 @@ as we only have to change the letter in the H file and it is changed everywhere 
 #define port(type,letter) concat (type,letter) 
 
 
-/*Defining the Port Letters and locations for the Leftmortor. Change 
+/*Defining the Port Letters and locations for the Leftmortor. 
 Change these to match your locations*/
 #define leftmotorport D
 #define leftmotora 2
@@ -30,11 +30,11 @@ Change these to match your locations*/
 #define leftquada 5
 #define leftquadb 4
 
-/*Defining the Port Letters and locations for the Rightmortor
+/*Defining the Port Letters and locations for the Rightmotor
 Change these to match your locations*/
 #define rightmotorport D
-#define rightmotora 7
-#define rightmotorb 6
+#define rightmotora 6
+#define rightmotorb 7
 
 #define rightquadport D
 #define rightquada 4
@@ -44,12 +44,12 @@ Change these to match your locations*/
 void init_motors ();
 
 void leftmotor_brake();
-void leftmotor_foward();
+void leftmotor_forward();
 void leftmotor_reverse();
 void leftmotor_coast();
 
 void rightmotor_brake();
-void rightmotor_foward();
+void rightmotor_forward();
 void rightmotor_reverse();
 void rightmotor_coast();
 
