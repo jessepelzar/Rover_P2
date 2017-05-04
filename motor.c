@@ -1,5 +1,5 @@
-/*
-ns for the DAGU Rover 5
+/**
+* Driver functions for the DAGU Rover 5
 * Created by I.Sekyonda 2016
 * For Atmega32u4 on PapilioDUO
 *Include  motor.h in your main.c file and you can call these functions

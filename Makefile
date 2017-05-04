@@ -1,6 +1,6 @@
 CC = avr-gcc
-MCU = atmega32u4
-F_CPU = 8000000
+MCU = atmega328
+F_CPU = 1000000
 CCOPTS=  -Wall -O1 -DF_CPU=$(F_CPU) -mmcu=$(MCU) 
 
 
@@ -19,7 +19,7 @@ motor.o: motor.c motor.h
 
 program: main
 	avr-objcopy -R .eeprom -O ihex main main.hex
-	avrdude -c usbtiny -p atmega32u4 -U flash:w:main.hex
+	avrdude -c usbtiny -p atmega328 -U flash:w:main.hex
 
 
 clean:

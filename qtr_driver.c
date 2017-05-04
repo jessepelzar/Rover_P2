@@ -1,5 +1,5 @@
-
-/*ns for the QTR sensor Array ver. 1.1
+/**
+ * Driver functions for the QTR sensor Array ver. 1.1
  * Created by D. Summerville, 2014
  * Edited by I.Sekyonda 2016
  * Edit for Atmega32u4 on PapilioDUO
@@ -43,7 +43,6 @@ ISR(TIMER0_COMPB_vect)
 ISR(TIMER0_COMPA_vect)
 {
     QTR_ARRAY_VALUE=PIN_QTR; //read current sensor value
-    QTR_CHARGE_ARRAY(); //begin charging array for next read
+    QTR_CHARGE_ARRAY(); //begin chrging array for next read
     return;
 }
-

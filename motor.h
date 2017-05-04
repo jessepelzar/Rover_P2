@@ -1,5 +1,5 @@
-/*
-ns for the  Dagu Rover 5
+/**
+* Driver functions for the  Dagu Rover 5
 * Created  by I.Sekyonda 2016
 *For Atmega32u4 on PapilioDUO
 */
@@ -20,25 +20,23 @@ as we only have to change the letter in the H file and it is changed everywhere 
 #define port(type,letter) concat (type,letter) 
 
 
-/*Defining the Port Letters and locations for the Leftmortor. 
+/*Defining the Port Letters and locations for the Leftmortor. Change 
 Change these to match your locations*/
-#define leftmotorport D
-#define leftmotora 2
-#define leftmotorb 3
-
+#define leftmotorport B
+#define leftmotora 6
+#define leftmotorb 7
 #define leftquadport B
-#define leftquada 5
-#define leftquadb 4
+#define leftquada 0
+#define leftquadb 1
 
-/*Defining the Port Letters and locations for the Rightmotor
+/*Defining the Port Letters and locations for the Rightmortor
 Change these to match your locations*/
-#define rightmotorport D
-#define rightmotora 6
-#define rightmotorb 7
-
-#define rightquadport D
+#define rightmotorport B
+#define rightmotora 3
+#define rightmotorb 2
+#define rightquadport B
 #define rightquada 4
-#define rightquadb 1
+#define rightquadb 5
 
 
 void init_motors ();
@@ -59,4 +57,3 @@ uint8_t rightquad_value();
 
 
 #endif 
-
