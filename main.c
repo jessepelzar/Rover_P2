@@ -1,4 +1,4 @@
-// ©Jesse Pelzar & Robert Healey
+// ©Jesse Pelzar
 // 4/20/17
 #define F_CPU 1000000UL
 #include "motor.c"
